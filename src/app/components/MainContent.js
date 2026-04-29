@@ -1,7 +1,8 @@
-import Image from "next/image";
-import TypingEffect  from "./TypingEffect";
-const MainContent = () => {
+import TypingEffect from "./TypingEffect";
+import Portfolio from "./Portfolio";
+import Certificates from "./Certificates";
 
+const MainContent = () => {
     return (
         <div className="main_content container">
             <div className="hero_image">
@@ -16,6 +17,8 @@ const MainContent = () => {
                </div>
             </div>
 
+            <Portfolio />
+            <Certificates />
         </div>
     );
 }
