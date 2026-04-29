@@ -5,9 +5,9 @@ import profilePicture from '/public/images/profile.jpeg';
 // Icons
 import { FaHtml5, FaCss3, FaPython, FaNode, FaReact, FaLinkedin, FaGithub, FaAws } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { TbBrandDjango, TbBrandDocker, TbBrandFlask } from "react-icons/tb";
+import { TbBrandDjango, TbBrandDocker } from "react-icons/tb";
 import { AiOutlineConsoleSql } from "react-icons/ai";
-import { SiLinux, SiGnubash, SiPerl, SiKubernetes, SiHackerrank } from "react-icons/si";
+import { SiLinux, SiGnubash, SiPerl, SiKubernetes, SiHackerrank, SiFlask } from "react-icons/si";
 
 
 const PersonalInfo = () => {
@@ -88,7 +88,7 @@ const PersonalInfo = () => {
                                 <span className='p_language__name'>Django</span>
                             </div>
                             <div className='p_language'>
-                                <span className='p_language__icon'><TbBrandFlask/></span>
+                                <span className='p_language__icon'><SiFlask/></span>
                                 <span className='p_language__name'>Flask</span>
                             </div>
                             <div className='p_language'>
