@@ -104,10 +104,10 @@ const PersonalInfo = () => {
                                 <span className='p_language__name'>CSS</span>
                             </div>
                         </div>
-                        <br/>
-                        <br/>
+                    </div>
+                    <div className='personal_info__social'>
                         <hr className='divider'/>
-                        <div className='personal_info__social'>
+                        <div className='social_links'>
                             <a className='social_page' href='https://www.linkedin.com/in/luis-hern%C3%A1ndez-3871aa25a' target='_blank' rel='noopener noreferrer'><FaLinkedin/></a>
                             <a className='social_page' href='https://github.com/LuisCarlosHM' target='_blank' rel='noopener noreferrer'><FaGithub/></a>
                             <a className='social_page' href='https://www.hackerrank.com/certificates/961cb464f6f5' target='_blank' rel='noopener noreferrer'><SiHackerrank/></a>

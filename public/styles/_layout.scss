@@ -20,9 +20,16 @@ body{
     z-index: 2;
     position: absolute;
     
+    &__details{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
     &__header{
         padding: $padding-sm;
-        height: 22rem;
+        padding-bottom: $padding-md;
     }
 
     &__image{
@@ -43,26 +50,25 @@ body{
 
     &__body{
         padding: $padding-md;
-        height: calc(100vh - $padding-xs * 2 - 25rem);
+        flex: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        min-height: 45rem; 
+        justify-content: space-between;
+        overflow: hidden;
     }
 
     &__skills{
-        margin-top: $margin-md;
+        margin-top: $margin-sm;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: $margin-sm;
+        gap: $margin-xs;
     }
     &__languages_list{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
-        margin-bottom: $margin-sm;
-      
+
         .language{
             margin: 0 auto;
             &__icon{
@@ -72,7 +78,7 @@ body{
                 align-items: center;
                 justify-content: center;
             }
-       
+
         }
         span{
             display: block;
@@ -82,11 +88,9 @@ body{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         width: 100%;
-        height: 22rem;
-        row-gap: $margin-sm;
-        margin-top: $margin-sm;
-        flex: 2;
+        gap: $margin-xs;
         .p_language{
+            text-align: center;
             span{
                 display: block;
             }
@@ -95,9 +99,17 @@ body{
 
     &__social{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: $margin-xs;
         width: 100%;
-        padding: 0 $padding-md;
+        .divider{
+            width: 100%;
+        }
+        .social_links{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 $padding-md;
+        }
         .social_page{
             display: inline-block;
             font-size: $font-size-md;

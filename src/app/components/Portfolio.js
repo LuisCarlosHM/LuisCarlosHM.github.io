@@ -10,13 +10,13 @@ const Portfolio = () => {
             title: "ML Prediction App",
             description: "Machine learning prediction app with Django backend, React frontend, containerized with Docker and deployed on Azure with Kubernetes.",
             tech: ["Django", "React", "Docker", "Kubernetes", "Azure"],
-            url: null, // private
+            url: null,
         },
         {
             title: "Personal Finance Tracker",
             description: "Personal finance tracking dashboard built with JavaScript and Chart.js.",
             tech: ["JavaScript", "Chart.js"],
-            url: null, // private
+            url: null,
         },
         {
             title: "Natours",
@@ -33,18 +33,25 @@ const Portfolio = () => {
     ];
 
     return (
-        <section id="portfolio">
-            <h2>Projects</h2>
-            {/* TODO: style this section */}
-            {projects.map((project, i) => (
-                <div key={i}>
-                    <p><strong>{project.title}</strong></p>
-                    <p>{project.description}</p>
-                    <p>{project.tech.join(" · ")}</p>
-                    {project.url && <a href={project.url} target="_blank" rel="noopener noreferrer">View on GitHub</a>}
-                    {!project.url && <p><em>Private project</em></p>}
-                </div>
-            ))}
+        <section className="portfolio">
+            <h2 className="portfolio__title">Projects</h2>
+            <div className="portfolio__grid">
+                {projects.map((project, i) => (
+                    <div key={i} className="portfolio__card">
+                        <p className="portfolio__card__title">{project.title}</p>
+                        <p className="portfolio__card__description">{project.description}</p>
+                        <div className="portfolio__card__tags">
+                            {project.tech.map((tag, j) => (
+                                <span key={j} className="portfolio__card__tag">{tag}</span>
+                            ))}
+                        </div>
+                        {project.url
+                            ? <a href={project.url} target="_blank" rel="noopener noreferrer" className="portfolio__card__link">View on GitHub →</a>
+                            : <p className="portfolio__card__private">Private project</p>
+                        }
+                    </div>
+                ))}
+            </div>
         </section>
     );
 };
