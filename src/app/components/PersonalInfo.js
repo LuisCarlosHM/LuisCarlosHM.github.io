@@ -5,9 +5,9 @@ import profilePicture from '/public/images/profile.jpeg';
 // Icons
 import { FaHtml5, FaCss3, FaPython, FaNode, FaReact, FaLinkedin, FaGithub, FaAws } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { TbBrandDjango, TbBrandDocker } from "react-icons/tb";
+import { TbBrandDjango, TbBrandDocker, TbBrandFlask } from "react-icons/tb";
 import { AiOutlineConsoleSql } from "react-icons/ai";
-import { SiLinux, SiGnubash, SiPerl } from "react-icons/si";
+import { SiLinux, SiGnubash, SiPerl, SiKubernetes, SiHackerrank } from "react-icons/si";
 
 
 const PersonalInfo = () => {
@@ -68,6 +68,10 @@ const PersonalInfo = () => {
                                 <span className='p_language__name'>Docker</span>
                             </div>
                             <div className='p_language'>
+                                <span className='p_language__icon'><SiKubernetes/></span>
+                                <span className='p_language__name'>Kubernetes</span>
+                            </div>
+                            <div className='p_language'>
                                 <span className='p_language__icon'><IoLogoJavascript/></span>
                                 <span className='p_language__name'>JavaScript</span>
                             </div>
@@ -82,6 +86,10 @@ const PersonalInfo = () => {
                             <div className='p_language'>
                                 <span className='p_language__icon'><TbBrandDjango/></span>
                                 <span className='p_language__name'>Django</span>
+                            </div>
+                            <div className='p_language'>
+                                <span className='p_language__icon'><TbBrandFlask/></span>
+                                <span className='p_language__name'>Flask</span>
                             </div>
                             <div className='p_language'>
                                 <span className='p_language__icon'><AiOutlineConsoleSql/></span>
@@ -102,6 +110,7 @@ const PersonalInfo = () => {
                         <div className='personal_info__social'>
                             <a className='social_page' href='https://www.linkedin.com/in/luis-hern%C3%A1ndez-3871aa25a' target='_blank' rel='noopener noreferrer'><FaLinkedin/></a>
                             <a className='social_page' href='https://github.com/LuisCarlosHM' target='_blank' rel='noopener noreferrer'><FaGithub/></a>
+                            <a className='social_page' href='https://www.hackerrank.com/certificates/961cb464f6f5' target='_blank' rel='noopener noreferrer'><SiHackerrank/></a>
                         </div>
                     </div>
                 </div>
