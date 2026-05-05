@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
 import path from "path";
 
-const nextConfig = {};
+const nextConfig = {
+  output: "export",
+  images: { unoptimized: true },
+};
 
 nextConfig.sassOptions = {
-  // Configure the route for sass files
-  "includePaths": [path.join(new URL(import.meta.url).pathname, "public/styles")],
+  includePaths: [path.join(new URL(import.meta.url).pathname, "public/styles")],
 };
 
 export default nextConfig;
