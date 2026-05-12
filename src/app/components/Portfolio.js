@@ -1,6 +1,12 @@
 const Portfolio = () => {
     const projects = [
         {
+            title: "AWS Terraform Portfolio",
+            description: "Production-grade AWS infrastructure as code. Modular VPC, EC2, RDS, and S3 modules across dev and prod environments, with remote state on S3 + DynamoDB and a GitHub Actions CI/CD pipeline.",
+            tech: ["Terraform", "AWS", "GitHub Actions", "IaC"],
+            url: "https://github.com/LuisCarlosHM/aws-terraform-portfolio",
+        },
+        {
             title: "Flight Price Tracker",
             description: "Python automation tool that tracks flight price changes and sends alerts via API.",
             tech: ["Python", "API"],
